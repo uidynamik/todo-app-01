@@ -27,6 +27,7 @@ button {
   border: 1px solid #c2c2c2;
   border-radius: 3px 0px 0px 3px;
   font-size: 1.1rem;
+  outline: none;
 }
 
 .form button {
@@ -48,7 +49,7 @@ button {
 .task {
   display: flex;
   justify-content: space-between;
-  background-color: rgba(69, 100, 255, 0.1);
+  background-color: #4564ff1a;
   border-radius: 3px;
   margin: 0.5rem 0;
   overflow: hidden;
