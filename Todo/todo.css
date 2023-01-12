@@ -1,0 +1,126 @@
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.card {
+  width: 30rem;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+.card h1 {
+  color: #505050;
+}
+
+.form {
+  display: flex;
+  margin: 1rem 0px 2rem 0px;
+}
+
+.form input {
+  width: 85%;
+  padding: 0.8rem;
+  box-sizing: border-box;
+  border: 1px solid #c2c2c2;
+  border-radius: 3px 0px 0px 3px;
+  font-size: 1.1rem;
+}
+
+.form button {
+  width: 15%;
+  background-color: #4563ff;
+  border: 1px solid #4563ff;
+  color: #fff;
+  transition: all 0.3s;
+  margin-left: -2px;
+  border-radius: 0px 3px 3px 0px;
+  font-size: 2rem;
+  box-sizing: border-box;
+}
+
+.form button:hover {
+  background-color: #3857f5;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(69, 100, 255, 0.1);
+  border-radius: 3px;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.task:hover {
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+.task .text {
+  padding: 10px;
+}
+
+.task button {
+  border: none;
+  background-color: #ec1543;
+  color: #fff;
+  padding: 0 0.6rem;
+  display: none;
+  transition: all 0.5s;
+}
+
+.task button:hover {
+  cursor: pointer;
+  background-color: #c70f37;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+footer button {
+  background-color: #4563ff;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  letter-spacing: 1px;
+  border-radius: 2px;
+}
+
+.task:hover button {
+  display: block;
+  -webkit-animation: slide-in-right 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-right 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
